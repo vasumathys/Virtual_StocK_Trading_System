@@ -1,0 +1,32 @@
+type YahooResponse struct{
+List struct{
+    Meta struct{
+      Type string 'json:"type"'
+      Start int 'json:"start"'
+      Count int 'json:"count"'
+    }
+    Resources []struct{
+      Resource struct{
+        ClassName string 'json:"classname"'
+        Fields struct{
+        Change string 'json:"change"'
+        Chg_Percent string 'json:"chg_percent"'
+        Day_high string 'json:"day_high"'
+        Day_low string 'json:"day_low"'
+        Issuer_name 'json:"issuer_name"'
+        Issuer_name_lang 'json:"issuer_name_lang"'
+        Name 'json:"name"'
+        Price 'json:"price"'
+        Symbol 'json:"symbol"'
+        Ts 'json:"ts"'
+        Type 'json:"type"'
+        Utctime 'json:"utctime"'
+        Volume 'json:"volume"'
+        Year_high 'json:"year_high"'
+        Year_low 'json:"year_low"'
+
+        }
+      }
+    }
+  }
+}
